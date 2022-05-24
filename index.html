@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Parking lot - app</title>
+  </head>
+  <body>
+    <div id="vehicle-details">
+      <input
+        class="input-style"
+        type="text"
+        name="carname"
+        id="carname"
+        placeholder="Enter the vehicle name"
+        autocomplete="off"
+      />
+      <input
+        class="input-style"
+        type="text"
+        name="license-plate"
+        id="license-plate"
+        placeholder="Enter the vehicle license plate"
+        autocomplete="off"
+      />
+      <button id="register" class="input-style">Register</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>License Plate</th>
+          <th>Check-in</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="parking-lot"></tbody>
+    </table>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
